@@ -22,9 +22,8 @@ This project ensures a seamless process for both students and administrators to 
 ## Features
 
 ### Admin Side
-- **Login Page:** Secure login to access the admin panel.  
-![login page](https://github![Student Dashboard](https://github.com/user-attachments/assets/63255586-274f-4c4b-92f8-bb4a0074038f)
-
+- **Login Page:** Secure login to access the admin panel.
+  ![login page](https://github.com/user-attachments/assets/1f915d0f-154b-40ff-8126-d8ca2a574d5b)
 - **Manage Fines:** Add new fines for students.  
 ![Add new Fines Staff Dash](https://github.com/user-attachments/assets/0513c4df-ac0d-4c17-b2de-329380d0989a)
 - **Verify Payments:** Approve or reject fines marked as paid.  
