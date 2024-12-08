@@ -26,8 +26,7 @@ This project ensures a seamless process for both students and administrators to 
   ![Login Page](Fine-Management-System/Images/login-page.png)
 
 - **Manage Fines:** Add new fines for students.  
-  ![Add New Fines](Images/Add-new-Fines-Staff-Dash.png)
-
+![Add new Fines Staff Dash](https://github.com/user-attachments/assets/0513c4df-ac0d-4c17-b2de-329380d0989a)
 - **Verify Payments:** Approve or reject fines marked as paid.  
   ![Pending Confirmation Staff Dash](Images/Pending-Confirmation-Staff-Dash.png)
 
