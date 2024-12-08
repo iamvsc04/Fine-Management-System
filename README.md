@@ -23,7 +23,7 @@ This project ensures a seamless process for both students and administrators to 
 
 ### Admin Side
 - **Login Page:** Secure login to access the admin panel.  
-  ![Login Page](Images/login-page.png)
+  ![Login Page](Fine-Management-System/Images/login-page.png)
 
 - **Manage Fines:** Add new fines for students.  
   ![Add New Fines](Images/Add-new-Fines-Staff-Dash.png)
