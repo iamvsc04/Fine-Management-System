@@ -13,7 +13,7 @@ public class UpdateFineStatus extends HttpServlet {
     
     private static final String DB_URL = "jdbc:mysql://localhost:3306/fines_management";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "IamVsc@1234";
+    private static final String DB_PASSWORD = "Sai@1234";
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(false);

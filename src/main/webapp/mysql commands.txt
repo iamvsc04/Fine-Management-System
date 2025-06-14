@@ -1,0 +1,45 @@
+create database fines_management;
+
+use fines_management;
+-- STUDENT TABLE
+CREATE TABLE student (
+    rollno VARCHAR(20) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    pass VARCHAR(100) NOT NULL,
+    dept VARCHAR(100) NOT NULL,
+    year INT NOT NULL
+);
+
+-- STAFF TABLE
+CREATE TABLE staff (
+    staff_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    pass VARCHAR(100) NOT NULL
+);
+
+-- FINES TABLE
+CREATE TABLE fines (
+    fine_id INT PRIMARY KEY AUTO_INCREMENT,
+    student_rollno VARCHAR(20) NOT NULL,
+    year INT NOT NULL,
+    dept VARCHAR(100) NOT NULL,
+    amount DECIMAL(10,2) NOT NULL,
+    reason VARCHAR(255) NOT NULL,
+    fine_date DATE NOT NULL,
+    payment_status BOOLEAN NOT NULL DEFAULT FALSE,
+    staff_confirmed BOOLEAN NOT NULL DEFAULT FALSE,
+
+    -- Foreign key to student
+    CONSTRAINT fk_fines_student FOREIGN KEY (student_rollno) REFERENCES student(rollno)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
+
+
+insert into student values ('22B81A05DR','SAI CHARAN','22b81a05dr@cvr.ac.in','Sai@1234','CSE',4);
+
+INSERT INTO staff (name, email, pass)
+VALUES ('Staff 1', 'staff1@cvr.ac', 'Sai@1234');
+

@@ -29,7 +29,7 @@ public class PayFineServlet extends HttpServlet {
         
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/fines_management", "root", "IamVsc@1234");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/fines_management", "root", "Sai@1234");
             ps = conn.prepareStatement("UPDATE fines SET payment_status = TRUE WHERE fine_id = ?");
             ps.setInt(1, fineId);
             int rowsUpdated = ps.executeUpdate();

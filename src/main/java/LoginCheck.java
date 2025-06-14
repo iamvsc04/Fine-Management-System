@@ -16,9 +16,9 @@ import jakarta.servlet.http.HttpSession;
 @WebServlet("/LoginCheck")
 public class LoginCheck extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	String url="jdbc:mysql://localhost:3306/credentials";
+	String url="jdbc:mysql://localhost:3306/fines_management";
 	String user="root";
-	String Password="IamVsc@1234";
+	String Password="Sai@1234";
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -31,7 +31,7 @@ public class ConfirmFineServlet extends HttpServlet {
         
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/fines_management", "root", "IamVsc@1234");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/fines_management", "root", "Sai@1234");
             
             if ("confirm".equals(action)) {
                 ps = conn.prepareStatement("UPDATE fines SET staff_confirmed = TRUE WHERE fine_id = ?");
